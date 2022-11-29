@@ -7,7 +7,10 @@ const BlogPreview: React.FC<BlogPost> = (props) => {
   const previewText: string = bodyText.substring(0, 150) + '...';
   return (
     <section>
-      <BlogHeader createdAt={createdAt} author={author} />
+      <div className='my-[4px]'>
+        <BlogHeader createdAt={createdAt} author={author} />
+
+      </div>
       <h2 className="font-bold"> {title} </h2>
       <p className="mt-2">{previewText}</p>
       <div className="flex gap-3">
@@ -15,7 +18,7 @@ const BlogPreview: React.FC<BlogPost> = (props) => {
           return (
             <p
               key={idx}
-              className="bg-sky-600 px-2 mt-2 font-medium rounded-xl text-zinc-800"
+              className="bg-sky-600 px-2 mt-2 font-medium text-[1rem] rounded-xl text-zinc-800"
             >
               {tag}
             </p>

@@ -6,12 +6,22 @@
 
 @layer components {
   .label {
-    @apply bg-sky-600 px-2 mt-2 font-semibold rounded-xl text-zinc-800;
+    @apply bg-sky-600 px-2 mt-2 font-semibold rounded-xl text-zinc-800 overflow-x-auto;
   }
   .label-selected {
     @apply bg-sky-800 px-2 mt-2 font-semibold rounded-xl text-neutral-800;
   }
   .layout {
-    @apply w-screen h-screen overflow-auto flex flex-col items-center bg-zinc-800 text-neutral-300 font-poppins;
+    @apply w-screen h-screen overflow-auto flex flex-col items-center bg-[#171717] text-[#f5f5f5] font-poppins;
   }
+}
+
+body{
+  overflow-x: hidden; 
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
