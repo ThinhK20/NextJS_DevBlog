@@ -7,9 +7,8 @@ const BlogPreview: React.FC<BlogPost> = (props) => {
   const previewText: string = bodyText.substring(0, 150) + '...';
   return (
     <section>
-      <div className='my-[4px]'>
+      <div className="my-[4px]">
         <BlogHeader createdAt={createdAt} author={author} />
-
       </div>
       <h2 className="font-bold"> {title} </h2>
       <p className="mt-2">{previewText}</p>

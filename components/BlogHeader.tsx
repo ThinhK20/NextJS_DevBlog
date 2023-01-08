@@ -10,7 +10,7 @@ interface headerProps {
   };
 }
 
-const BlogHeader: React.FC<headerProps> = (props) => { 
+const BlogHeader: React.FC<headerProps> = (props) => {
   const {createdAt, author} = props;
   const createdDate: Date = new Date(createdAt);
   const options: Intl.DateTimeFormatOptions = {

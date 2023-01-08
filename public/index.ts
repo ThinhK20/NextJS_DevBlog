@@ -1,5 +1,5 @@
 const logoAssests = {
-    vercel: require("./vercel.svg").default
-}
+  vercel: require('./vercel.svg').default,
+};
 
-export default logoAssests
+export default logoAssests;

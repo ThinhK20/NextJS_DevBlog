@@ -34,7 +34,7 @@ const Home: NextPage = ({
 
   return (
     <>
-      <PageHeader/>
+      <PageHeader />
       <main className="layout">
         <title>Home Page</title>
         <section>
