@@ -15,6 +15,7 @@ export async function getBlogs(): Promise<BlogPost[]> {
     body: JSON.stringify({query: discussionGraphQL(DICUSSION_CATEGORY_ID)}),
   });
   let res = await response.json();
+  
   const discussions = res.data.repository.discussions.nodes;
   const posts = discussions.map((discussion: any): BlogPost => {
     const {
